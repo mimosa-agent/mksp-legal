@@ -1,0 +1,49 @@
+# Draft: move to .github/workflows/ once the GitHub login has the "workflow" permission.
+name: Fairway badge rarity
+
+# Weekly, Monday 03:17 UTC (12:17 in Japan): publish how many golfers have each badge, as
+# rounded percentages only, to fairway/badge-rarity.json. See .github/scripts/fairway-badge-rarity.mjs.
+on:
+  schedule:
+    - cron: "17 3 * * 1"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  rarity:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Test
+        run: node --test .github/scripts/fairway-badge-rarity.test.mjs
+      - name: Build percentages
+        id: build
+        env:
+          POSTHOG_PERSONAL_API_KEY: ${{ secrets.POSTHOG_PERSONAL_API_KEY }}
+          POSTHOG_HOST: ${{ vars.POSTHOG_HOST }}
+          POSTHOG_PROJECT_ID: ${{ vars.POSTHOG_PROJECT_ID }}
+        run: node .github/scripts/fairway-badge-rarity.mjs
+      - name: Publish
+        run: |
+          if git diff --quiet -- fairway/badge-rarity.json; then echo "Nothing to publish."; exit 0; fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add fairway/badge-rarity.json
+          git commit -m "Fairway badge rarity: weekly update"
+          git push
+      - name: Reminder at 100 golfers
+        if: steps.build.outputs.crossed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh issue create \
+            --title "Fairway passed 100 golfers: badge percentages are now showing" \
+            --body "The weekly job found 100+ Fairway golfers in the last 90 days, so fairway/badge-rarity.json now has percentages and the app shows them on badges (for example \"Rare · 12% of golfers\").
+
+          Claude: open the app (or the web version), check a few badges show a sensible %, and log it in the MKSP Ops Log. Close this issue when done."
