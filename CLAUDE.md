@@ -4,6 +4,7 @@ Public legal pages (privacy policies, terms) for 株式会社MKSP apps, served b
 This repo is PUBLIC: never put secrets, app code or private notes here.
 
 - Fairway privacy policy: `fairway/privacy/index.html` → https://mimosa-agent.github.io/mksp-legal/fairway/privacy/
+- Fairway β (TestFlight beta, accounts + Clubhouse) privacy policy: `fairway/beta/privacy/index.html` → https://mimosa-agent.github.io/mksp-legal/fairway/beta/privacy/ (Mike approved 2026-10-01 for external testers; fold into the main policy when accounts ship).
 - Plain HTML, no build step. Edit, commit, push; Pages redeploys in about a minute.
 - When an app adds data collection (accounts, sync, purchases, new analytics), update its policy and the effective date before release.
 
