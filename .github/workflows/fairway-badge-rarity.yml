@@ -1,4 +1,3 @@
-# Draft: move to .github/workflows/ once the GitHub login has the "workflow" permission.
 name: Fairway badge rarity
 
 # Weekly, Monday 03:17 UTC (12:17 in Japan): publish how many golfers have each badge, as
