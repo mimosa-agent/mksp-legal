@@ -65,7 +65,8 @@
     <li>If the app crashes or hits an error, technical information about the error.</li>
   </ul>
   <p>Your internet connection's IP address is necessarily sent with each request, and PostHog may use it to estimate an approximate country or city. We do not combine analytics with any information that identifies you, and we do not use it to track you across other companies' apps or websites.</p>
-  <p><strong>You can turn this off at any time</strong> in the app under Settings → "Share anonymous usage data". When it is off, the app sends no analytics.</p>
+  <p>If the app crashes, it also sends a crash report to our crash reporting provider, Sentry: what went wrong and where in the app's code, plus the device model, operating system version and app version. Crash reports contain no identifier for you, no IP-based location and none of your practice data.</p>
+  <p><strong>You can turn this off at any time</strong> in the app under Settings → "Share anonymous usage data". When it is off, the app sends no analytics and no crash reports.</p>
 
   <h2>5. How we use information</h2>
   <ul>
@@ -77,7 +78,7 @@
   <p>We do not sell personal information, use it for advertising, or share it with data brokers.</p>
 
   <h2>6. Service providers and international transfer</h2>
-  <p>Analytics are processed by PostHog, Inc. on servers in the United States. PostHog processes the data on our behalf under its own terms and security measures. See <a href="https://posthog.com/privacy">posthog.com/privacy</a>. Because the United States does not have a comprehensive federal privacy law equivalent to Japan's Act on the Protection of Personal Information, we tell you here that this information is transferred to the United States.</p>
+  <p>Analytics are processed by PostHog, Inc. on servers in the United States. PostHog processes the data on our behalf under its own terms and security measures. See <a href="https://posthog.com/privacy">posthog.com/privacy</a>. Crash reports are processed by Functional Software, Inc. (Sentry) on servers in the United States, on the same basis; see <a href="https://sentry.io/privacy/">sentry.io/privacy</a>. Because the United States does not have a comprehensive federal privacy law equivalent to Japan's Act on the Protection of Personal Information, we tell you here that this information is transferred to the United States.</p>
   <p>Account and synced data are stored by Supabase Inc. in Tokyo, Japan (section 2). Push notifications go through Expo (650 Industries, Inc., United States; see <a href="https://expo.dev/privacy">expo.dev/privacy</a>), which receives only your push token and the notification text.</p>
 
   <h2>7. Keeping, protecting and deleting data</h2>
@@ -139,7 +140,8 @@
     <li>アプリがクラッシュした場合やエラーが起きた場合の、エラーに関する技術情報</li>
   </ul>
   <p>通信の仕組み上、IPアドレスが送信され、PostHogがおおよその国・都市の推定に利用することがあります。当社はこれらのデータを、個人を特定できる情報と結び付けません。また、他社のアプリやウェブサイトをまたいだ追跡には使いません。</p>
-  <p><strong>この送信はいつでも停止できます。</strong>アプリの「設定」→「匿名の利用データを送信」をオフにすると、利用状況データは一切送信されません。</p>
+  <p>アプリがクラッシュした場合は、クラッシュレポートをクラッシュ報告サービス「Sentry」にも送信します。内容は、何が起きたかとアプリのコード上の発生箇所、端末の機種、OSのバージョン、アプリのバージョンです。クラッシュレポートには、利用者を識別する情報、IPアドレスから推定した位置情報、練習記録は含まれません。</p>
+  <p><strong>この送信はいつでも停止できます。</strong>アプリの「設定」→「匿名の利用データを送信」をオフにすると、利用状況データもクラッシュレポートも一切送信されません。</p>
 
   <h2>5. 利用目的</h2>
   <ul>
@@ -151,7 +153,7 @@
   <p>当社は、個人情報を販売したり、広告目的で利用したり、データブローカーに提供したりすることはありません。</p>
 
   <h2>6. 委託先と外国にある第三者への提供</h2>
-  <p>利用状況データは、米国のPostHog, Inc.が米国内のサーバーで処理します。PostHogは同社の規約とセキュリティ対策に基づき、当社のためにデータを処理します（<a href="https://posthog.com/privacy">posthog.com/privacy</a>）。米国には日本の個人情報保護法に相当する包括的な連邦法がありません。このため、当該情報が米国に移転されることをここでお知らせします。</p>
+  <p>利用状況データは、米国のPostHog, Inc.が米国内のサーバーで処理します。PostHogは同社の規約とセキュリティ対策に基づき、当社のためにデータを処理します（<a href="https://posthog.com/privacy">posthog.com/privacy</a>）。クラッシュレポートは、米国のFunctional Software, Inc.（Sentry）が同様に米国内のサーバーで処理します（<a href="https://sentry.io/privacy/">sentry.io/privacy</a>）。米国には日本の個人情報保護法に相当する包括的な連邦法がありません。このため、当該情報が米国に移転されることをここでお知らせします。</p>
   <p>アカウントと同期データは、Supabase Inc.が日本・東京で保存します（第2条）。プッシュ通知は米国のExpo（650 Industries, Inc.、<a href="https://expo.dev/privacy">expo.dev/privacy</a>）を経由し、同社が受け取るのはプッシュトークンと通知の文面のみです。</p>
 
   <h2>7. 保存期間・安全管理・削除</h2>
