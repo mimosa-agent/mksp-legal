@@ -7,6 +7,8 @@ This repo is PUBLIC: never put secrets, app code or private notes here.
 - Fairway β (TestFlight beta, accounts + Clubhouse) privacy policy: `fairway/beta/privacy/index.html` → https://mimosa-agent.github.io/mksp-legal/fairway/beta/privacy/ (Mike approved 2026-10-01 for external testers; fold into the main policy when accounts ship).
 - 5th Floor (private beta: iPhone via TestFlight + web app 5th.mksp.tokyo) privacy policy: `fifth-floor/beta/privacy/index.html` → https://mimosa-agent.github.io/mksp-legal/fifth-floor/beta/privacy/ (Mike approved publishing 2026-10-05; source draft and data map live in the 5th-floor repo, `docs/product/`). Update it when 5F adds messaging, AI translation or dinners.
 - Hagumori (はぐもり, waitlist site hagumori.mksp.tokyo) privacy policy: `hagumori/privacy/index.html` → https://mimosa-agent.github.io/mksp-legal/hagumori/privacy/ (Mike approved 2026-10-06; covers the website and waitlist only). Before the app launches, write the app policy; before the first waitlist email, name the email provider.
+- 5th Floor terms of use: `fifth-floor/beta/terms/index.html` → https://mimosa-agent.github.io/mksp-legal/fifth-floor/beta/terms/ (linked from the app's join screen and the web payment page).
+- 5th Floor 特定商取引法に基づく表記 (dinner sales; Stripe and Japanese law require it before live payments): `fifth-floor/tokushoho/index.html` → https://mimosa-agent.github.io/mksp-legal/fifth-floor/tokushoho/
 - Plain HTML, no build step. Edit, commit, push; Pages redeploys in about a minute.
 - When an app adds data collection (accounts, sync, purchases, new analytics), update its policy and the effective date before release.
 
