@@ -35,28 +35,30 @@
   <p class="meta">Effective [RELEASE DATE], 2026 · Provided by 株式会社MKSP</p>
   <nav><a href="#ja">日本語はこちら</a></nav>
 
-  <p>Fairway is a golf practice app. You rate your swings at the driving range and see your progress. This policy explains what information the app handles and why. The short version: your practice data stays on your phone unless you choose to sign in, we collect anonymous usage statistics to improve the app, and we never sell your data or show ads.</p>
+
+  <p>Fairway is a golf practice app. You rate your swings at the driving range and see your progress. This policy explains what information the app handles and why. The short version: Fairway creates an account for you automatically, without asking for your name or email, so your practice is backed up and you can join your area's team; Sign in with Apple is optional and keeps your account if you change phones. We collect anonymous usage statistics to improve the app, and we never sell your data or show ads.</p>
 
   <h2>1. Data that stays on your device</h2>
-  <p>Your practice log stays on your iPhone: sessions, swing ratings, clubs, direction and contact tags, focus notes and settings. We do not upload it to our servers unless you sign in with Apple, in which case it is also synced to your account as described in section 2. It is included in your device's own iCloud or computer backups if you have those turned on, which Apple manages under your Apple account. Deleting the app deletes this data from the device.</p>
-  <p>Fairway also has a web version (mksps-team-golf-tracker.expo.app). There, your practice log is stored only in that browser on that device, and clearing the browser's site data deletes it. The web version sends the same kind of analytics described below, except that its random identifier lasts only until the page is closed or reloaded.</p>
+  <p>Your practice log is kept on your iPhone: sessions, swing ratings, clubs, direction, curve and contact tags, focus notes and settings. It is also synced to your account on our server, as described in section 2. It is included in your device's own iCloud or computer backups if you have those turned on, which Apple manages under your Apple account. Deleting the app deletes this data from the device; delete your account (section 2) to remove it from our server.</p>
+  <p>Fairway also has a web version (app.fairway.tokyo). There, your practice log is stored in that browser on that device, and clearing the browser's site data deletes it there. When you first save a practice on the web, an account is created for it automatically, as in the app (section 2), and it is synced the same way. The web version sends the same kind of analytics described below; its random identifier is kept in that browser until you clear the site data.</p>
   <p>In US states whose laws require it, the app asks Apple for your age range (for example "18 or over"). Apple shows its own prompt, and the answer is kept only on your device.</p>
-  <p>Without an account, Fairway does not ask for your name, email address, contacts, photos or location.</p>
+  <p>Fairway does not ask for your name, email address, contacts, photos or location unless you choose to sign in with Apple (section 2), to use your location when picking your area, or to add a range photo to a post (section 3).</p>
 
-  <h2>2. Optional account (Sign in with Apple)</h2>
-  <p>You can use Fairway without an account. If you choose to sign in with Apple, we create an account for you.</p>
-  <p><strong>What we receive from Apple:</strong> an Apple user ID (a random identifier that is specific to Fairway), your email address (or an Apple private relay address if you choose to hide your email) and your name, if you share it. You can also set a nickname and pick a golfer character in the app, which we store too.</p>
-  <p><strong>What we sync:</strong> your practice log (sessions, swings, focus notes and tags), the round scores you enter (date, score, holes and course name), your badges, and a few settings (your bag, club lofts, language, pledge, weekly goal, nickname and golfer). We do this so your history is backed up and the same on every device where you sign in. Other settings, such as appearance, stay on the device.</p>
+  <h2>2. Your account (created automatically; Sign in with Apple optional)</h2>
+  <p>When you first open Fairway, the app creates an account for you automatically. It contains no name, email or Apple ID: just a random identifier, a random nickname (for example "Weekend Golfer 482") and a random golfer character, which you can change any time in Settings → Edit profile. If you later choose to sign in with Apple, Apple is linked to this same account, so everything stays.</p>
+  <p><strong>What we receive from Apple (only if you sign in with Apple):</strong> an Apple user ID (a random identifier that is specific to Fairway), your email address (or an Apple private relay address if you choose to hide your email) and your name, if you share it. You can also set a nickname and pick a golfer character in the app, which we store too.</p>
+  <p><strong>What we sync:</strong> your practice log (sessions, swings, focus notes and tags), the round scores you enter (date, score, holes and course name), your badges, and a few settings (your bag, club lofts, language, pledge, weekly goal, nickname and golfer). We do this so your history is backed up, counts for your team in the Clubhouse, and is the same on every device where you sign in with Apple. Other settings, such as appearance, stay on the device.</p>
   <p><strong>Where it is stored:</strong> with our service provider Supabase Inc., in Tokyo, Japan (AWS ap-northeast-1). Supabase processes the data only on our behalf.</p>
-  <p><strong>How long we keep it:</strong> until you delete your account. In the app, go to Settings → Delete account. This removes your account and synced data from our servers, and we attempt to revoke Fairway's access to your Apple account. If that doesn't go through, you can remove Fairway yourself: on your iPhone, go to Settings → [your name] → Sign-In &amp; Security → Sign in with Apple, choose Fairway and tap Stop Using Apple ID. Copies in database backups are removed as the backups roll off, within 7 days.</p>
+  <p><strong>How long we keep it:</strong> until you delete your account. An automatic account that has no Apple sign-in and hasn't been used for 30 days is deleted with everything in it (the practice log on your phone stays; the app makes a new account the next time it's needed). In the app, go to Settings → Delete account. This removes your account and synced data from our servers, and we attempt to revoke Fairway's access to your Apple account. If that doesn't go through, you can remove Fairway yourself: on your iPhone, go to Settings → [your name] → Sign-In &amp; Security → Sign in with Apple, choose Fairway and tap Stop Using Apple ID. Copies in database backups are removed as the backups roll off, within 7 days.</p>
   <p><strong>Emails:</strong> we do not send you any emails. Your account stores a marketing-email preference, which is off by default; we will only turn it on if you separately agree to it in the future.</p>
   <p>The analytics and crash reporting described in section 4 are not linked to your account.</p>
 
-  <h2>3. Clubhouse (optional; for signed-in users who join it)</h2>
-  <p>The Clubhouse lets you practise with friends in a small group (a "crew") and play for your area's team on a local board. When you sign in, the app asks where you practise, and once you pick an area you're in the Clubhouse (you can skip that step and pick later). You can leave it any time (see "Leaving" below).</p>
+  <h2>3. Clubhouse</h2>
+  <p>The Clubhouse lets you practise with friends in a small group (a "crew") and play for your area's team on a local board. Everyone with a Fairway account can see the board; once you pick the area you practise in (the app asks after a practice, or any time from the Clubhouse tab), you're on your area's team. You can leave it any time (see "Leaving" below).</p>
   <p><strong>What we store when you join:</strong> the area you practise in (for example a Tokyo ward, a Japanese prefecture, a US state or a country; never an address or coordinates), your golfer character (the one in your profile; the app picks one at random until you choose), your time zone, your crew, the cheers and nudges you send and receive, the people you block, reports you make, and a push-notification token for your phone.</p>
   <p><strong>Location:</strong> when you join, the app can suggest your area from your current location. Only if you tap to use your location does it ask for permission (approximate location by default), read your location once and turn it into an area; your iPhone uses Apple's location service to look up the place name. Your coordinates are not sent to us, and only the area you confirm is saved. Fairway does not use motion data.</p>
-  <p><strong>What others see:</strong> people in your crew see your name, golfer, and how many range days and balls you logged each day of the current week, plus cheers. On the local board, your range days and balls count toward your area's total for everyone, and your name, golfer, area, range days and balls can appear in its list of top golfers for other Clubhouse members on the same board (people you block never see you there). Your name is the one in your profile; you can change it any time. Your ratings, notes, clubs and photos are never shared.</p>
+  <p><strong>What others see:</strong> people in your crew see your name, golfer, and how many range days and balls you logged each day of the current week, plus cheers. On the local board, your range days and balls count toward your area's total for everyone, and your name, golfer, area, range days and balls can appear in its list of top golfers for other Clubhouse members on the same board (people you block never see you there). In the Clubhouse feed, every practice you finish with 10 or more balls is posted automatically, and every Clubhouse member can see it for two weeks: your name, golfer, area, when it started and ended, how many balls you hit, your good-shot percentage (the share rated 5 or 6), how many stripes (6s) you hit, your best club and its good-shot percentage, the badges you earned during it, and how many cheers it got and from whom. Depending on the panels you choose for the post (Edit post), it can also show each swing's rating and the direction you tagged, in order (the shot map and "Every swing"). Any Clubhouse member can cheer it, which may send you a notification. You can block anyone from their post, crew or board entry; you and they then no longer see each other. Your name is the one in your profile; you can change it any time. Your notes, focus, other tags and round scores are never shared.</p>
+  <p><strong>Range photos (optional):</strong> you can add one photo to a practice's post (Edit post). The app shrinks it on your phone and uploads it to our server (Supabase, Tokyo), where it is kept privately. Before anyone else can see it, it is sent to OpenAI's moderation service, which checks it for content that isn't allowed (for example nudity or violence) and returns only a yes/no result; a photo that fails is deleted. Once it passes, every Clubhouse member can see it on your post for as long as the post shows (not after you leave the Clubhouse or delete the practice). Please don't add photos of other people without their permission. You can remove the photo any time in Edit post, which deletes it from our server; deleting your account deletes all your photos.</p>
   <p><strong>Notifications:</strong> if you allow them, we send cheer and nudge notifications through Expo's push notification service (650 Industries, Inc.), which receives your push token and the notification text.</p>
   <p><strong>Leaving:</strong> leaving the Clubhouse removes your Clubhouse profile, crew membership, push token, the cheers and nudges you sent or received, and the people you blocked. Reports you made are kept for safety review without your name. Deleting your account removes everything.</p>
 
@@ -82,12 +84,13 @@
   <p>We do not sell personal information, use it for advertising, or share it with data brokers.</p>
 
   <h2>6. Service providers and international transfer</h2>
-  <p>Analytics are processed by PostHog, Inc. on servers in the United States. PostHog processes the data on our behalf under its own terms and security measures. See <a href="https://posthog.com/privacy">posthog.com/privacy</a>. Crash reports are processed by Functional Software, Inc. (Sentry) on servers in the United States, on the same basis; see <a href="https://sentry.io/privacy/">sentry.io/privacy</a>. Because the United States does not have a comprehensive federal privacy law equivalent to Japan's Act on the Protection of Personal Information, we tell you here that this information is transferred to the United States.</p>
+  <p>Analytics are processed by PostHog, Inc. on servers in the United States. PostHog processes the data on our behalf under its own terms and security measures. See <a href="https://posthog.com/privacy">posthog.com/privacy</a>. Crash reports are processed by Functional Software, Inc. (Sentry) on servers in the United States, on the same basis; see <a href="https://sentry.io/privacy/">sentry.io/privacy</a>. Range photos you add to a post are checked by OpenAI, L.L.C. (United States) through its moderation service, on the same basis; see <a href="https://openai.com/policies/privacy-policy/">openai.com/policies/privacy-policy</a>. Because the United States does not have a comprehensive federal privacy law equivalent to Japan's Act on the Protection of Personal Information, we tell you here that this information is transferred to the United States.</p>
   <p>Account and synced data are stored by Supabase Inc. in Tokyo, Japan (section 2). Push notifications go through Expo (650 Industries, Inc., United States; see <a href="https://expo.dev/privacy">expo.dev/privacy</a>), which receives only your push token and the notification text.</p>
+  <p>If you use Fairway outside Japan (for example in the United States), the information you sync is transferred to and stored in Japan, where it is protected under Japan's Act on the Protection of Personal Information.</p>
 
   <h2>7. Keeping, protecting and deleting data</h2>
   <p>We keep analytics data only as long as it is useful for the purposes above. You can delete everything on your device by deleting the app. Analytics are not linked to your identity, so we usually cannot find a particular person's events, but you can email us and we will help as far as we can, including deleting data where it can be identified.</p>
-  <p>To protect information, we send analytics only over encrypted connections (HTTPS), limit access to the analytics service to the people who work on Fairway, protect that access with strong passwords and two-factor authentication, and choose providers that maintain their own security programs.</p>
+  <p>To protect information, we send all data only over encrypted connections (HTTPS), and our server provider encrypts stored data, photos and backups. On our server, database rules make sure each account can only read and change its own data; what other golfers see comes only through the Clubhouse features described in section 3. Range photos are kept privately and shown to others only after they pass the check. We limit access to the server and the analytics service to the people who work on Fairway, protect that access with strong passwords and two-factor authentication, keep daily backups of the server for 7 days, and choose providers that maintain their own security programs.</p>
 
   <h2>8. Children</h2>
   <p>Fairway is not directed at children under 13, and we do not knowingly collect personal information from them.</p>
@@ -100,7 +103,7 @@
 
   <h2>11. Contact</h2>
   <p>株式会社MKSP<br>EAT-PLAY-WORKS 3F, 5-4-16 Hiroo, Shibuya-ku, Tokyo, Japan<br>Email: <a href="mailto:info@mksp.tokyo">info@mksp.tokyo</a></p>
-  <p>You can contact us about this policy, or to make requests about your personal information (such as access, correction or deletion) under applicable law, including Japan's Act on the Protection of Personal Information.</p>
+  <p>You can contact us about this policy, or to make requests about your personal information (such as access, correction or deletion) under applicable law, including Japan's Act on the Protection of Personal Information. The name of our representative director is available on request.</p>
 </section>
 
 <hr>
@@ -110,28 +113,30 @@
   <p class="meta">施行日：2026年[公開日] · 提供：株式会社MKSP</p>
   <nav><a href="#en">English</a></nav>
 
-  <p>株式会社MKSP（以下「当社」）は、ゴルフ練習アプリ「Fairway」（以下「本アプリ」）における情報の取扱いについて、以下のとおり定めます。練習の記録は、Appleでサインインしない限りお使いのiPhoneの中だけに保存されます。アプリ改善のために匿名の利用状況を収集しますが、情報を販売したり、広告に利用したりすることはありません。</p>
+
+  <p>株式会社MKSP（以下「当社」）は、ゴルフ練習アプリ「Fairway」（以下「本アプリ」）における情報の取扱いについて、以下のとおり定めます。本アプリは、氏名やメールアドレスをたずねずにアカウントを自動で作成します。練習記録がバックアップされ、地域のチームに参加できるようにするためです。「Appleでサインイン」は任意で、機種変更してもアカウントを引き継げます。アプリ改善のために匿名の利用状況を収集しますが、情報を販売したり、広告に利用したりすることはありません。</p>
 
   <h2>1. 端末内に保存される情報</h2>
-  <p>練習セッション、スイングの評価、クラブ、方向・当たりのタグ、フォーカスメモ、設定などの練習記録は、お使いのiPhoneの中に保存されます。Appleでサインインしない限り当社のサーバーには送信されず、サインインした場合は第2条のとおりアカウントにも同期されます。iCloudやパソコンへのバックアップを有効にしている場合は、Appleが管理する端末のバックアップに含まれます。本アプリを削除すると、端末内のこれらの情報も削除されます。</p>
-  <p>本アプリにはウェブ版（mksps-team-golf-tracker.expo.app）もあります。ウェブ版の練習記録は、お使いの端末のそのブラウザの中だけに保存され、ブラウザのサイトデータを消去すると削除されます。ウェブ版も下記と同じ種類の利用状況データを送信しますが、ランダムな識別子はページを閉じるか再読み込みするまでしか保持されません。</p>
+  <p>練習セッション、スイングの評価、クラブ、方向・曲がり・当たりのタグ、フォーカスメモ、設定などの練習記録は、お使いのiPhoneの中に保存されます。第2条のとおり、当社のサーバー上のアカウントにも同期されます。iCloudやパソコンへのバックアップを有効にしている場合は、Appleが管理する端末のバックアップに含まれます。本アプリを削除すると端末内のデータは削除されます。サーバーからも削除するには、アカウントを削除してください（第2条）。</p>
+  <p>本アプリにはウェブ版（app.fairway.tokyo）もあります。ウェブ版の練習記録は、お使いの端末のそのブラウザの中に保存され、ブラウザのサイトデータを消去するとそこから削除されます。ウェブ版で初めて練習を保存すると、アプリと同じようにアカウントが自動で作成され（第2条）、同じように同期されます。ウェブ版も下記と同じ種類の利用状況データを送信します。ランダムな識別子は、サイトデータを消去するまでそのブラウザに保持されます。</p>
   <p>米国の一部の州では、法律に基づき、本アプリがAppleにお客様の年齢層（例：「18歳以上」）を問い合わせます。確認画面はAppleが表示し、回答はお使いの端末内にのみ保存されます。</p>
-  <p>アカウントを使わない場合、本アプリは氏名、メールアドレス、連絡先、写真、位置情報の提供を求めません。</p>
+  <p>「Appleでサインイン」を選んだ場合（第2条）や、地域を選ぶときに現在地を使った場合、投稿に練習場の写真を追加した場合（第3条）を除き、本アプリは氏名、メールアドレス、連絡先、写真、位置情報の提供を求めません。</p>
 
-  <h2>2. 任意のアカウント（Appleでサインイン）</h2>
-  <p>本アプリはアカウントなしでもお使いいただけます。「Appleでサインイン」を選ぶと、アカウントが作成されます。</p>
-  <p><strong>Appleから受け取る情報：</strong>AppleのユーザーID（Fairway専用のランダムな識別子）、メールアドレス（メールを非公開にした場合はAppleのプライベートリレーアドレス）、お名前（共有した場合のみ）。アプリ内で設定したニックネームと、選んだゴルファーのキャラクターも保存します。</p>
-  <p><strong>同期する情報：</strong>練習記録（セッション、スイング、フォーカスメモ、タグ）、入力したラウンドのスコア（日付、スコア、ホール数、コース名）、バッジ、一部の設定（マイバッグ、クラブのロフト、言語、誓い、週間目標、ニックネーム、ゴルファー）です。記録をバックアップし、サインインしたどの端末でも同じ履歴を見られるようにするために同期します。外観などその他の設定は、その端末にだけ残ります。</p>
+  <h2>2. アカウント（自動作成。「Appleでサインイン」は任意）</h2>
+  <p>本アプリを初めて開くと、アカウントが自動で作成されます。氏名、メールアドレス、Apple IDは含まれず、ランダムな識別子、ランダムなニックネーム（例：「週末ゴルファー482」）、ランダムなゴルファーのキャラクターだけです。ニックネームとキャラクターは「設定」→「プロフィールを編集」からいつでも変更できます。あとで「Appleでサインイン」を選ぶと、同じアカウントにAppleが紐づけられ、記録はそのまま残ります。</p>
+  <p><strong>Appleから受け取る情報（Appleでサインインした場合のみ）：</strong>AppleのユーザーID（Fairway専用のランダムな識別子）、メールアドレス（メールを非公開にした場合はAppleのプライベートリレーアドレス）、お名前（共有した場合のみ）。アプリ内で設定したニックネームと、選んだゴルファーのキャラクターも保存します。</p>
+  <p><strong>同期する情報：</strong>練習記録（セッション、スイング、フォーカスメモ、タグ）、入力したラウンドのスコア（日付、スコア、ホール数、コース名）、バッジ、一部の設定（マイバッグ、クラブのロフト、言語、誓い、週間目標、ニックネーム、ゴルファー）です。記録をバックアップし、クラブハウスでチームの記録に反映し、Appleでサインインしたどの端末でも同じ履歴を見られるようにするために同期します。外観などその他の設定は、その端末にだけ残ります。</p>
   <p><strong>保存場所：</strong>委託先のSupabase Inc.のサーバー（日本・東京、AWS ap-northeast-1）に保存します。Supabaseは当社のためにのみデータを処理します。</p>
-  <p><strong>保存期間：</strong>アカウントを削除するまで保存します。アプリの「設定」→「アカウントを削除」から削除できます。削除すると、アカウントと同期済みのデータは当社のサーバーから消去され、FairwayによるAppleアカウントへのアクセスの取り消しも試みます。取り消しがうまくいかなかった場合は、iPhoneの「設定」→［ご自身の名前］→「サインインとセキュリティ」→「Appleでサインイン」からFairwayを選び、「Apple IDの使用を停止」をタップして、ご自身で解除できます。データベースのバックアップに残るコピーは、バックアップの入れ替わりにより7日以内に消えます。</p>
+  <p><strong>保存期間：</strong>アカウントを削除するまで保存します。「Appleでサインイン」をしていない自動作成のアカウントは、30日間使われなかった場合、すべてのデータとともに削除します（iPhone内の練習記録は残り、次に必要になったときにアプリが新しいアカウントを作成します）。アプリの「設定」→「アカウントを削除」から削除できます。削除すると、アカウントと同期済みのデータは当社のサーバーから消去され、FairwayによるAppleアカウントへのアクセスの取り消しも試みます。取り消しがうまくいかなかった場合は、iPhoneの「設定」→［ご自身の名前］→「サインインとセキュリティ」→「Appleでサインイン」からFairwayを選び、「Apple IDの使用を停止」をタップして、ご自身で解除できます。データベースのバックアップに残るコピーは、バックアップの入れ替わりにより7日以内に消えます。</p>
   <p><strong>メールについて：</strong>当社からメールをお送りすることはありません。アカウントにはマーケティングメールの受信設定を保存していますが、初期設定はオフです。今後、別途ご同意をいただいた場合にのみオンにします。</p>
   <p>第4条の利用状況データとクラッシュレポートは、アカウントとは紐づけられません。</p>
 
-  <h2>3. クラブハウス（任意。サインインして参加した方のみ）</h2>
-  <p>クラブハウスでは、少人数のグループ（クルー）で仲間と練習を応援し合い、地元チームの一員として地元ボードに参加できます。サインインすると練習する地域をたずね、地域を選ぶとクラブハウスに参加します（この手順はスキップして、あとで選ぶこともできます）。いつでも退会できます（下記「退会」）。</p>
+  <h2>3. クラブハウス</h2>
+  <p>クラブハウスでは、少人数のグループ（クルー）で仲間と練習を応援し合い、地元チームの一員として地元ボードに参加できます。Fairwayのアカウントがあれば、誰でもボードを見られます。練習する地域を選ぶと（練習のあとにたずねるほか、クラブハウスのタブからいつでも選べます）、その地域のチームに参加します。いつでも退会できます（下記「退会」を参照）。</p>
   <p><strong>参加時に保存する情報：</strong>練習する地域（例：東京の区、都道府県、アメリカの州、国。住所や座標は保存しません）、ゴルファーのキャラクター（プロフィールのもの。選ぶまではアプリがランダムに選びます）、タイムゾーン、所属するクルー、送受信した拍手と「行こうよ」、ブロックした相手、送信した報告、プッシュ通知用のトークン。</p>
   <p><strong>位置情報：</strong>参加時に、現在地から練習する地域を提案できます。現在地を使うボタンをタップしたときだけ許可を求め（標準ではおおよその位置）、1回だけ位置情報を読み取って地域に変換します（地名の検索にはiPhoneがAppleの位置情報サービスを使います）。座標は当社に送信されず、保存されるのは確認した地域だけです。本アプリはモーションデータを使用しません。</p>
-  <p><strong>ほかの人に見える情報：</strong>クルーのメンバーには、名前、ゴルファー、今週の各日の練習日と球数、拍手が見えます。地元ボードでは、練習日と球数が地域の合計として全員に表示され、同じボードのクラブハウス参加者には、トップゴルファーの一覧にあなたの名前、ゴルファー、地域、練習日、球数が表示されることがあります（ブロックした相手には表示されません）。名前はプロフィールの名前で、いつでも変更できます。評価、メモ、クラブ、写真は共有されません。</p>
+  <p><strong>ほかの人に見える情報：</strong>クルーのメンバーには、名前、ゴルファー、今週の各日の練習日と球数、拍手が見えます。地元ボードでは、練習日と球数が地域の合計として全員に表示され、同じボードのクラブハウス参加者には、トップゴルファーの一覧にあなたの名前、ゴルファー、地域、練習日、球数が表示されることがあります（ブロックした相手には表示されません）。クラブハウスの「みんな」（フィード）には、10球以上の練習を終えると自動で投稿され、2週間、クラブハウスのすべての参加者に表示されます。表示されるのは、名前、ゴルファー、地域、練習の開始・終了時刻、球数、ナイス率（5か6と評価した割合）、会心（6）の数、ベストクラブとそのナイス率、練習中に獲得したバッジ、拍手の数と拍手した人です。投稿に選んだ内容（「投稿を編集」）によっては、1球ごとの評価と記録した方向も打った順に表示されます（ショットマップと「全ショット」）。クラブハウスの参加者は誰でも拍手でき、その際に通知が届くことがあります。投稿、クルー、ボードからどの人もブロックでき、ブロックするとお互いに表示されなくなります。名前はプロフィールの名前で、いつでも変更できます。メモ、目標、その他のタグ、ラウンドスコアは共有されません。</p>
+  <p><strong>練習場の写真（任意）：</strong>練習の投稿に写真を1枚追加できます（「投稿を編集」）。写真はスマホで縮小してから当社のサーバー（Supabase、東京）にアップロードし、非公開で保存します。ほかの人に表示する前に、OpenAIのモデレーションサービスに送り、ヌードや暴力など掲載できない内容がないかを確認します（結果は可否のみ）。確認を通らなかった写真は削除します。確認を通った写真は、投稿が表示されている間、クラブハウスのすべての参加者に表示されます（クラブハウスを退会したり、その練習を削除したりすると表示されなくなります）。ほかの人が写った写真は、その人の許可なく追加しないでください。写真は「投稿を編集」からいつでも削除でき、サーバーからも削除されます。アカウントを削除すると、すべての写真が削除されます。</p>
   <p><strong>通知：</strong>許可した場合、拍手と「行こうよ」の通知をExpoのプッシュ通知サービス（650 Industries, Inc.）経由で送ります。同サービスはプッシュトークンと通知の文面を受け取ります。</p>
   <p><strong>退会：</strong>クラブハウスを退会すると、クラブハウスのプロフィール、クルーへの所属、プッシュトークン、送受信した拍手と「行こうよ」、ブロックした相手を削除します。あなたが送った報告は、安全確認のため名前を外して保管します。アカウントを削除すると、すべて削除されます。</p>
 
@@ -157,12 +162,13 @@
   <p>当社は、個人情報を販売したり、広告目的で利用したり、データブローカーに提供したりすることはありません。</p>
 
   <h2>6. 委託先と外国にある第三者への提供</h2>
-  <p>利用状況データは、米国のPostHog, Inc.が米国内のサーバーで処理します。PostHogは同社の規約とセキュリティ対策に基づき、当社のためにデータを処理します（<a href="https://posthog.com/privacy">posthog.com/privacy</a>）。クラッシュレポートは、米国のFunctional Software, Inc.（Sentry）が同様に米国内のサーバーで処理します（<a href="https://sentry.io/privacy/">sentry.io/privacy</a>）。米国には日本の個人情報保護法に相当する包括的な連邦法がありません。このため、当該情報が米国に移転されることをここでお知らせします。</p>
+  <p>利用状況データは、米国のPostHog, Inc.が米国内のサーバーで処理します。PostHogは同社の規約とセキュリティ対策に基づき、当社のためにデータを処理します（<a href="https://posthog.com/privacy">posthog.com/privacy</a>）。クラッシュレポートは、米国のFunctional Software, Inc.（Sentry）が同様に米国内のサーバーで処理します（<a href="https://sentry.io/privacy/">sentry.io/privacy</a>）。投稿に追加した練習場の写真は、米国のOpenAI, L.L.C.がモデレーションサービスで同様に確認します（<a href="https://openai.com/policies/privacy-policy/">openai.com/policies/privacy-policy</a>）。米国には日本の個人情報保護法に相当する包括的な連邦法がありません。このため、当該情報が米国に移転されることをここでお知らせします。</p>
   <p>アカウントと同期データは、Supabase Inc.が日本・東京で保存します（第2条）。プッシュ通知は米国のExpo（650 Industries, Inc.、<a href="https://expo.dev/privacy">expo.dev/privacy</a>）を経由し、同社が受け取るのはプッシュトークンと通知の文面のみです。</p>
+  <p>日本国外（米国など）で本アプリをご利用の場合、同期する情報は日本に移転され、日本で保存されます。日本では個人情報保護法に基づいて保護されます。</p>
 
   <h2>7. 保存期間・安全管理・削除</h2>
   <p>利用状況データは、上記の目的に必要な期間に限り保存します。端末内の情報は、本アプリを削除することで消去できます。利用状況データは個人と結び付いていないため、特定の方のデータを探し出せないことが多いですが、ご連絡いただければ、特定できる範囲での削除を含め、可能な限り対応します。</p>
-  <p>当社は、情報を保護するため、利用状況データを暗号化された通信（HTTPS）でのみ送信し、分析サービスへのアクセスを本アプリの担当者に限定したうえで、強固なパスワードと二段階認証で保護しています。また、自らセキュリティ対策を講じている委託先を選定しています。</p>
+  <p>当社は、情報を保護するため、すべてのデータを暗号化された通信（HTTPS）でのみ送信し、保存データ、写真、バックアップはサーバーの委託先が暗号化して保存します。当社のサーバーでは、データベースのルールにより、各アカウントは自分のデータしか読み取り・変更できません。ほかのゴルファーに見えるのは、第3条で説明したクラブハウスの機能を通じた情報だけです。練習場の写真は非公開で保存し、確認を通った後にのみほかの人に表示します。サーバーと分析サービスへのアクセスは本アプリの担当者に限定し、強固なパスワードと二段階認証で保護しています。サーバーのバックアップは毎日取得して7日間保管し、自らセキュリティ対策を講じている委託先を選定しています。</p>
 
   <h2>8. お子さまについて</h2>
   <p>本アプリは13歳未満のお子さまを対象としておらず、お子さまの個人情報を故意に収集することはありません。</p>
@@ -175,7 +181,7 @@
 
   <h2>11. お問い合わせ</h2>
   <p>株式会社MKSP<br>〒150-0012 東京都渋谷区広尾5-4-16 EAT-PLAY-WORKS 3F<br>メール：<a href="mailto:info@mksp.tokyo">info@mksp.tokyo</a></p>
-  <p>本ポリシーに関するご質問や、個人情報保護法その他の法令に基づく開示・訂正・削除等のご請求は、上記までご連絡ください。</p>
+  <p>本ポリシーに関するご質問や、個人情報保護法その他の法令に基づく開示・訂正・削除等のご請求は、上記までご連絡ください。代表者の氏名は、ご請求に応じてお知らせします。</p>
 </section>
 
 <footer class="mksp">
