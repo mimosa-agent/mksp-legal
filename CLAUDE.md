@@ -10,6 +10,7 @@ This repo is PUBLIC: never put secrets, app code or private notes here.
 - 5th Floor terms of use: `fifth-floor/beta/terms/index.html` → https://mimosa-agent.github.io/mksp-legal/fifth-floor/beta/terms/ (linked from the app's join screen and the web payment page).
 - 5th Floor 特定商取引法に基づく表記 (dinner sales; Stripe and Japanese law require it before live payments): `fifth-floor/tokushoho/index.html` → https://mimosa-agent.github.io/mksp-legal/fifth-floor/tokushoho/
 - Tomoza (ともざ, iPhone app): support `tomoza/support/` → https://mimosa-agent.github.io/mksp-legal/tomoza/support/ and 特定商取引法に基づく表記 for ともざ+ `tomoza/tokushoho/` → https://mimosa-agent.github.io/mksp-legal/tomoza/tokushoho/ (2026-10-16, for the App Store 1.0 submission Mike asked for). The privacy policy lives in the app and at https://tomoza.pages.dev/privacy.
+- Hiroshi (iPhone app, dads, subscriptions via RevenueCat): `hiroshi/{privacy,terms,support,tokushoho}/` → https://mimosa-agent.github.io/mksp-legal/hiroshi/privacy/ etc. (2026-11-12, v1 release plan; app not released yet, Mike OK'd). Data stays on the phone; RevenueCat + Expo Updates are the only outside services. Update before adding accounts, sync or analytics.
 - Plain HTML, no build step. Edit, commit, push; Pages redeploys in about a minute.
 - When an app adds data collection (accounts, sync, purchases, new analytics), update its policy and the effective date before release.
 
