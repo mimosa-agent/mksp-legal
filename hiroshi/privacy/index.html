@@ -81,8 +81,10 @@
   <h2>8. 位置情報</h2>
   <p>お住まいの市区町村を選ぶときに「現在地を使う」を押した場合だけ、その時点の位置情報を使って市区町村を調べます。位置情報そのものは保存せず、当社にも送りません。</p>
 
-  <h2>9. 読み上げ</h2>
+  <h2>9. 読み上げ・通知・ご意見の送信</h2>
   <p>カードの読み上げは、iPhoneに入っている音声機能を使います。読み上げる文章を当社に送ることはありません。</p>
+  <p>毎週月曜の「今週のプラン」と手続きの期限のお知らせは、iPhoneの中で予約する通知です。通知のために当社のサーバーへ情報を送ることはありません。通知はアプリの「設定」→「お知らせ」、またはiPhoneの「設定」からいつでもオフにできます。</p>
+  <p>「Hiroshiに送る」(ご意見フォーム)から送った場合だけ、次の情報を当社のサーバー(下記13のSupabase)に保存します:書いた文章、種類(質問・困ったことなど)、返事を希望した場合のメールアドレス、どのガイドやカードについてか、アプリのバージョン、言語、お子さんの時期(例:生後14週)。お名前やわが家の情報は送りません。アカウントがなくても送れます。この情報は、ご返事とアプリの改善のためだけに使い、ほかの目的には使いません。迷惑な大量送信を防ぐため、端末ごとのランダムなIDを変換した値(元のIDには戻せません)を2日間だけ保存します。</p>
 
   <h2>10. サブスクリプション(RevenueCat)</h2>
   <p>有料プランの購入と復元は、Appleのアプリ内課金で行います。購入状態の確認には、RevenueCat, Inc.(米国)のサービスを使います。RevenueCatが受け取るのは、ランダムに作られた匿名のアプリ用ID、購入の記録(商品、日時、価格、国)、端末とアプリの基本情報(OSのバージョン、アプリのバージョンなど)です。お名前、メールアドレス、お子さんの情報、写真は送りません。お支払い情報はAppleが扱い、当社とRevenueCatは受け取りません。詳しくは<a href="https://www.revenuecat.com/privacy">RevenueCatのプライバシーポリシー</a>をご覧ください。</p>
@@ -92,13 +94,14 @@
 
   <h2>12. 匿名の利用データ(PostHog)</h2>
   <p>アプリをより使いやすくするため、PostHog, Inc.(米国)の分析サービスに匿名の利用データを送ります。送るのは、開いた画面の種類(例:「週のページ」)、使った機能(例:やることをチェックした、ガイドを開いた、無料体験を始めた、アカウントを作った方法)、ランダムに作られた匿名のID、アプリと端末の基本情報(アプリのバージョン、iOSのバージョン、端末の機種、言語)、お子さんの時期のおおまかな区分(例:妊娠20週、生後4か月)です。</p>
-  <p>アカウントのIDやメールアドレス、お子さんの名前・誕生日・出産予定日、わが家の情報、写真、日記やメモの文章、市区町村や位置情報は送りません。当社はこのデータで個人を特定せず、広告やトラッキングには使いません。PostHogの位置推定(IPアドレスからの地域判定)もオフにしています。</p>
+  <p>お住まいの地域は、「くわしく対応している4区」「それ以外の東京都」「それ以外の地域」の3区分のどれかだけを送ります。</p>
+  <p>アカウントのIDやメールアドレス、お子さんの名前・誕生日・出産予定日、わが家の情報、写真、日記やメモの文章、ご意見フォームの文章、市区町村名や入力した文字、位置情報は送りません。当社はこのデータで個人を特定せず、広告やトラッキングには使いません。PostHogの位置推定(IPアドレスからの地域判定)もオフにしています。</p>
   <p>送信は、アプリの「設定」→「データ」→「使い方データを送る」でいつでもオフにできます。詳しくは<a href="https://posthog.com/privacy">PostHogのプライバシーポリシー</a>をご覧ください。</p>
 
   <h2>13. 委託先と海外での取り扱い</h2>
   <p>当社は、次の事業者に情報の保管や送信を委託しています。いずれも委託した目的以外には使わせません。</p>
   <table>
-    <tr><th>Supabase, Inc.(米国)</th><td>アカウントと上記4の情報の保存(データベースはSupabaseのクラウド上にあります)</td></tr>
+    <tr><th>Supabase, Inc.(米国)</th><td>アカウントと上記4の情報、上記9のご意見の保存(データベースはSupabaseのクラウド上にあります)</td></tr>
     <tr><th>Cloudflare, Inc.(米国)</th><td>写真の非公開保存(R2)、共有リストのページの配信</td></tr>
     <tr><th>Resend, Inc.(米国)</th><td>確認コードとお知らせのメール送信(メールアドレスとメール本文)</td></tr>
     <tr><th>LINEヤフー株式会社(日本)</th><td>LINEでサインイン、LINEでのお知らせ(LINEの利用者ID)</td></tr>
@@ -111,7 +114,7 @@
   <p>上記5(ご自身で共有したリンク)と13の委託を除き、法令に基づく場合を除いて、利用者の情報を第三者に提供しません。情報の販売も行いません。</p>
 
   <h2>15. 保存期間と削除</h2>
-  <p>サーバー上の情報は、アカウントがある間だけ保存します。アプリの「設定」→「アカウント」→「アカウントを削除」から、いつでもアカウントを削除できます。削除すると、サーバー上のアカウント、お子さんの情報、日記、写真、共有リスト、同意の記録をすべて消し、Appleでサインインした場合はAppleとの連携も取り消します。端末の中の情報はそのまま残ります。サインアウトしても、サーバー上の情報は消えません。</p>
+  <p>サーバー上の情報は、アカウントがある間だけ保存します。アプリの「設定」→「アカウント」→「アカウントを削除」から、いつでもアカウントを削除できます。削除すると、サーバー上のアカウント、お子さんの情報、日記、写真、共有リスト、同意の記録をすべて消し、Appleでサインインした場合はAppleとの連携も取り消します。端末の中の情報はそのまま残ります。サインアウトしても、サーバー上の情報は消えません。ご意見フォーム(上記9)の内容はアカウントとは別に保存しており、アカウントを削除しても残ります。消してほしい場合は、下記18までご連絡ください。</p>
   <p>保有する情報の開示、訂正、利用停止、削除のご請求は、下記18までご連絡ください。ご本人であることを確認のうえ対応します。</p>
 
   <h2>16. 健康に関する情報について</h2>
@@ -178,8 +181,10 @@
   <h2>8. Location</h2>
   <p>Only when you tap "Use my location" while picking your city does the app use your current location, once, to find your city or ward. The location itself is not stored and not sent to us.</p>
 
-  <h2>9. Read aloud</h2>
+  <h2>9. Read aloud, notifications and feedback</h2>
   <p>Read aloud uses your iPhone's built-in speech. The text is not sent to us.</p>
+  <p>The Monday "plan for the week" and paperwork deadline notifications are scheduled on your iPhone. Nothing is sent to our servers for them. Turn them off any time in the app (Settings → Notifications) or in iPhone Settings.</p>
+  <p>Only when you send something with "Tell Hiroshi" (the feedback form) do we store, on our servers (Supabase, section 13): what you wrote, its type (question, problem and so on), your email address if you asked for a reply, which guide or card it is about, the app version, language, and your child's stage (for example "week 14"). We never receive names or your family info, and no account is needed. We use this only to answer you and to fix the app. To stop bulk spam we keep a one-way scrambled value of a random per-device ID for 2 days (it can't be turned back into the ID).</p>
 
   <h2>10. Subscriptions (RevenueCat)</h2>
   <p>Purchases and restores use Apple's in-app purchase. To check your subscription status we use RevenueCat, Inc. (USA). RevenueCat receives a random, anonymous app user ID, purchase records (product, date, price, country) and basic device and app details (such as iOS and app version). It does not receive your name, email, your child's details or your photos. Apple handles payment details; neither we nor RevenueCat receive them. See <a href="https://www.revenuecat.com/privacy">RevenueCat's privacy policy</a>.</p>
@@ -189,13 +194,14 @@
 
   <h2>12. Anonymous usage data (PostHog)</h2>
   <p>To make the app better, we send anonymous usage data to the analytics service of PostHog, Inc. (USA). This covers the kind of screen you open (for example "week page"), features you use (for example ticking a task, opening a guide, starting the free trial, which sign-in method you picked), a random anonymous ID, basic app and device details (app version, iOS version, device model, language) and a rough stage bucket for your child (for example "pregnancy week 20" or "month 4").</p>
-  <p>We never send your account ID or email, your child's name, birthday or due date, your family info, photos, journal or note text, your city or your location. We don't use this data to identify you, and never for ads or tracking. PostHog's location lookup from IP addresses is turned off.</p>
+  <p>For where you live, we send only one of three groups: "one of the 4 wards covered in detail", "elsewhere in Tokyo" or "elsewhere in Japan".</p>
+  <p>We never send your account ID or email, your child's name, birthday or due date, your family info, photos, journal or note text, feedback text, your city name or what you type, or your location. We don't use this data to identify you, and never for ads or tracking. PostHog's location lookup from IP addresses is turned off.</p>
   <p>You can turn sending off any time in the app: Settings → Data → Share usage data. See <a href="https://posthog.com/privacy">PostHog's privacy policy</a>.</p>
 
   <h2>13. Service providers and processing abroad</h2>
   <p>We use these companies to store or send information for us, only for the purposes below:</p>
   <table>
-    <tr><th>Supabase, Inc. (USA)</th><td>Accounts and the information in section 4 (database in Supabase's cloud)</td></tr>
+    <tr><th>Supabase, Inc. (USA)</th><td>Accounts, the information in section 4, and feedback from section 9 (database in Supabase's cloud)</td></tr>
     <tr><th>Cloudflare, Inc. (USA)</th><td>Private photo storage (R2) and the shared list page</td></tr>
     <tr><th>Resend, Inc. (USA)</th><td>Sign-in codes and message emails (your email address and the email text)</td></tr>
     <tr><th>LY Corporation (Japan)</th><td>Sign in with LINE and LINE messages (your LINE user ID)</td></tr>
@@ -208,7 +214,7 @@
   <p>Apart from links you share yourself (section 5) and the providers in section 13, we don't share your information with anyone unless the law requires it, and we never sell it.</p>
 
   <h2>15. How long we keep it, and deleting it</h2>
-  <p>We keep server data only while you have an account. You can delete your account any time in the app: Settings → Account → Delete account. This deletes your account, child details, journal, photos, shared lists and consent records from our servers, and revokes the link with Apple if you used Sign in with Apple. Data on your phone stays. Signing out does not delete server data.</p>
+  <p>We keep server data only while you have an account. You can delete your account any time in the app: Settings → Account → Delete account. This deletes your account, child details, journal, photos, shared lists and consent records from our servers, and revokes the link with Apple if you used Sign in with Apple. Data on your phone stays. Signing out does not delete server data. Feedback sent with the form (section 9) is stored apart from accounts and stays after an account is deleted; contact us (section 18) to have it deleted.</p>
   <p>To ask us to disclose, correct, stop using or delete information we hold, contact us (section 18). We'll confirm it's you first.</p>
 
   <h2>16. Health content</h2>
