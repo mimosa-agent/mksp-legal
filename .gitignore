@@ -1,3 +1,14 @@
 .DS_Store
 .env
 .env.*
+
+# Lab standard secrets/junk (audit F13, 2026-11-16)
+*.pem
+*.p12
+*.p8
+*.key
+*.mobileprovision
+GoogleService-Info.plist
+secrets.*
+node_modules/
+!.env.example
